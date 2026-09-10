@@ -1,6 +1,7 @@
 type Query {
     assigneds(request: AssignRequest): [UserJobAssigned]
     userById(id:ID): User
+    jobById(id:ID): Job # permite buscar trabajos por id desde la interfaz gráfica de graphql
 }
 type Mutation {
     addJob(request: JobRequest): Job
